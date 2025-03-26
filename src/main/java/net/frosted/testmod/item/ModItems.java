@@ -13,7 +13,6 @@ public class ModItems {
     public static final Item BLUE_KYBER_CRYSTAL = registerItem("blue_kyber_crystal", new Item(new Item.Settings()));
     public static final Item GREEN_KYBER_CRYSTAL = registerItem("green_kyber_crystal", new Item(new Item.Settings()));
     public static final Item RED_LIGHTSABER = registerItem("red_lightsaber", new Item(new Item.Settings()));
-    public static final Item UNREFINED_RED_KYBER_CRYSTAL = registerItem("unrefined_red_kyber_crystal", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TestMod.MOD_ID, name), item);

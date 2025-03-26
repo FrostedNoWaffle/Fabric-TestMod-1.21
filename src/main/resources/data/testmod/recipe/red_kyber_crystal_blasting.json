@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": "100000000000",
+  "cookingtime": "400",
   "experience": "1.0",
   "group": "red_kyber_crystal",
   "ingredient": {

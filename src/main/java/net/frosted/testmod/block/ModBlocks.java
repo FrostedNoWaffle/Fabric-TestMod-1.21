@@ -16,7 +16,8 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block RED_KYBER_ORE = registerBlock("red_kyber_ore",
-        new Block(AbstractBlock.Settings.create()
+        new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                AbstractBlock.Settings.create()
                 .strength(4f)
                 .requiresTool()
                 .sounds(BlockSoundGroup.STONE)));

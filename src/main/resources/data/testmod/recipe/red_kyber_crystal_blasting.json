@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": "100000000000",
+  "experience": "1.0",
+  "group": "red_kyber_crystal",
+  "ingredient": {
+    "item": "testmod:unrefined_red_kyber_crystal"
+  },
+  "result": {
+    "id": "testmod:red_kyber_crystal"
+  }
+}

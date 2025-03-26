@@ -1,0 +1,14 @@
+{
+  "item.testmod.red_kyber_crystal": "Red Kyber Crystal",
+  "item.testmod.blue_kyber_crystal": "Blue Kyber Crystal",
+  "item.testmod.green_kyber_crystal": "Green Kyber Crystal",
+  "item.testmod.red_lightsaber": "Red Lightsaber",
+
+  "block.testmod.red_kyber_ore": "Red Kyber Ore",
+  "block.testmod.blue_kyber_ore": "Blue Kyber Ore",
+  "block.testmod.green_kyber_ore": "Green Kyber Ore",
+
+  "itemgroup.testmod.kyber_crystals": "Kyber Crystals",
+  "itemgroup.testmod.kyber_ores": "Kyber Ores",
+  "itemgroup.testmod.lightsabers": "Light Sabers"
+}

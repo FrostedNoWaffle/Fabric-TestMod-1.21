@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_KYBER_ORE);
                         entries.add(ModBlocks.BLUE_KYBER_ORE);
                         entries.add(ModBlocks.GREEN_KYBER_ORE);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
 
                     }).build());
 
@@ -36,6 +37,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RED_LIGHTSABER))
                     .displayName(Text.translatable("itemgroup.testmod.lightsabers")).entries((displayContext, entries) -> {
                         entries.add(ModItems.RED_LIGHTSABER);
+                        entries.add(ModItems.CHISEL);
 
 
                     }).build());

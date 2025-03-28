@@ -5,7 +5,7 @@
   "experience": "1.0",
   "group": "red_kyber_crystal",
   "ingredient": {
-    "item": "testmod:unrefined_red_kyber_crystal"
+    "item": "testmod:red_kyber_ore"
   },
   "result": {
     "id": "testmod:red_kyber_crystal"

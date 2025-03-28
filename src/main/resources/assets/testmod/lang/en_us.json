@@ -3,13 +3,23 @@
   "item.testmod.blue_kyber_crystal": "Blue Kyber Crystal",
   "item.testmod.green_kyber_crystal": "Green Kyber Crystal",
   "item.testmod.red_lightsaber": "Red Lightsaber",
+  "item.testmod.chisel": "Chisel",
+  "item.testmod.cauliflower": "Cauliflower",
+  "item.testmod.starlight_ashes": "Starlight Ashes",
 
 
   "block.testmod.red_kyber_ore": "Red Kyber Ore",
   "block.testmod.blue_kyber_ore": "Blue Kyber Ore",
   "block.testmod.green_kyber_ore": "Green Kyber Ore",
+  "block.testmod.magic_block": "Magic Block",
+  "block.testmod.fish_plushie": "ACraftingFish Plushie",
 
   "itemgroup.testmod.kyber_crystals": "Kyber Crystals",
   "itemgroup.testmod.kyber_ores": "Kyber Ores",
-  "itemgroup.testmod.lightsabers": "Light Sabers"
+  "itemgroup.testmod.lightsabers": "Light Sabers",
+
+  "tooltip.testmod.magic_block.tooltip": "Try throwing a §4Red Kyber Crystal§r on top of me!",
+  "tooltip.testmod.chisel.shift_down": "§7Cycles between all the different Kyber Ore colors",
+  "tooltip.testmod.chisel": "Press §eShift§r for more information",
+  "tooltip.testmod.cauliflower": "Has a random change of giving a §4Health§r boost"
 }

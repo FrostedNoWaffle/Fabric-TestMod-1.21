@@ -1,6 +1,7 @@
 package net.frosted.testmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.frosted.testmod.block.ModBlocks;
 import net.frosted.testmod.item.ModItemGroups;
 import net.frosted.testmod.item.ModItems;
@@ -16,5 +17,7 @@ public class TestMod implements ModInitializer {
 		ModItems.registeredModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+
+		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
 }

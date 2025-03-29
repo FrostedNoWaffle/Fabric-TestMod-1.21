@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "blue_kyber_crystal",
+  "ingredient": {
+    "item": "testmod:blue_kyber_ore"
+  },
+  "result": {
+    "id": "testmod:blue_kyber_crystal"
+  }
+}

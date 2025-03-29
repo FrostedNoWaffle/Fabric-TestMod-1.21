@@ -37,6 +37,41 @@ public class ModBlocks {
                             .requiresTool()
                             .sounds(BlockSoundGroup.STONE)));
 
+    public static final Block DEEPSLATE_RED_KYBER_ORE = registerBlock("deepslate_red_kyber_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block DEEPSLATE_BLUE_KYBER_ORE = registerBlock("deepslate_blue_kyber_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block DEEPSLATE_GREEN_KYBER_ORE = registerBlock("deepslate_green_kyber_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block RUBY_ORE = registerBlock("ruby_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(2f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
+
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create()
                     .strength(1f)
@@ -47,6 +82,11 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .strength(0.1f)
                     .sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(0.1f)
+                    .sounds(BlockSoundGroup.METAL)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

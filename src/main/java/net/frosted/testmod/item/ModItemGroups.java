@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RED_KYBER_CRYSTAL);
                         entries.add(ModItems.BLUE_KYBER_CRYSTAL);
                         entries.add(ModItems.GREEN_KYBER_CRYSTAL);
+                        entries.add(ModItems.RUBY);
 
                     }).build());
 
@@ -28,7 +29,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_KYBER_ORE);
                         entries.add(ModBlocks.BLUE_KYBER_ORE);
                         entries.add(ModBlocks.GREEN_KYBER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RED_KYBER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_BLUE_KYBER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_GREEN_KYBER_ORE);
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
                         entries.add(ModBlocks.MAGIC_BLOCK);
+                        entries.add(ModBlocks.RUBY_BLOCK);
 
                     }).build());
 

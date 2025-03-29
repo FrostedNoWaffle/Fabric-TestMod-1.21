@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item GREEN_KYBER_CRYSTAL = registerItem("green_kyber_crystal", new Item(new Item.Settings()));
     public static final Item RED_LIGHTSABER = registerItem("red_lightsaber", new Item(new Item.Settings()));
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
+    public static final Item RUBY =registerItem("ruby", new Item(new Item.Settings()));
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

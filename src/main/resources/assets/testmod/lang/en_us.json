@@ -6,11 +6,17 @@
   "item.testmod.chisel": "Chisel",
   "item.testmod.cauliflower": "Cauliflower",
   "item.testmod.starlight_ashes": "Starlight Ashes",
+  "Item.testmod.ruby": "Ruby",
 
 
   "block.testmod.red_kyber_ore": "Red Kyber Ore",
   "block.testmod.blue_kyber_ore": "Blue Kyber Ore",
   "block.testmod.green_kyber_ore": "Green Kyber Ore",
+  "block.testmod.deepslate_red_kyber_ore": "Deepslate Red Kyber Ore",
+  "block.testmod.deepslate_blue_kyber_ore": "Deepslate Blue Kyber Ore",
+  "block.testmod.deepslate_green_kyber_ore": "Deepslate Green Kyber Ore",
+  "block.testmod.ruby_ore": "Ruby Ore",
+  "block.testmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "block.testmod.magic_block": "Magic Block",
   "block.testmod.fish_plushie": "ACraftingFish Plushie",
 

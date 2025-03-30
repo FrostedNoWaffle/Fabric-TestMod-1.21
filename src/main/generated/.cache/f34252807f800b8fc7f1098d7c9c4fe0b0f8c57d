@@ -1,4 +1,7 @@
-// 1.21	2025-03-29T01:26:49.6873558	TestMod/Tags for minecraft:block
+// 1.21	2025-03-29T16:01:39.741805	TestMod/Tags for minecraft:block
 071f47f0d3493e8f59bdc5d357378081f7ed69af data\minecraft\tags\block\needs_iron_tool.json
+4bd4c79454f2bb71e0444e4e8be6c9632d98ff98 data\minecraft\tags\block\fence_gates.json
+ebcda0e884310e52abab49d58b256a3f45e9de96 data\minecraft\tags\block\fences.json
 ad563ee42dd3ffb6635f80ae03a14d08053254f5 data\minecraft\tags\block\mineable\pickaxe.json
 35704c13fef98787a9464eb96f2dac06e10ca404 data\minecraft\tags\block\needs_diamond_tool.json
+34e02039ed014227cb7eb8a0a5e2ad8c0c907e0a data\minecraft\tags\block\walls.json

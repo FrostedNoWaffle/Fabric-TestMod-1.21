@@ -12,17 +12,34 @@
   "block.testmod.red_kyber_ore": "Red Kyber Ore",
   "block.testmod.blue_kyber_ore": "Blue Kyber Ore",
   "block.testmod.green_kyber_ore": "Green Kyber Ore",
+
   "block.testmod.deepslate_red_kyber_ore": "Deepslate Red Kyber Ore",
   "block.testmod.deepslate_blue_kyber_ore": "Deepslate Blue Kyber Ore",
   "block.testmod.deepslate_green_kyber_ore": "Deepslate Green Kyber Ore",
+
   "block.testmod.ruby_ore": "Ruby Ore",
   "block.testmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.testmod.ruby_block": "Ruby Block",
+
   "block.testmod.magic_block": "Magic Block",
+
   "block.testmod.fish_plushie": "ACraftingFish Plushie",
 
-  "itemgroup.testmod.kyber_crystals": "Kyber Crystals",
-  "itemgroup.testmod.kyber_ores": "Kyber Ores",
-  "itemgroup.testmod.lightsabers": "Light Sabers",
+  "block.testmod.ruby_stairs": "Ruby Stairs",
+  "block.testmod.ruby_slab": "Ruby Slab",
+
+  "block.testmod.ruby_button": "Ruby Button",
+  "block.testmod.ruby_pressure_plate": "Ruby Pressure Plate",
+
+  "block.testmod.ruby_fence": "Ruby Fence",
+  "block.testmod.ruby_fence_gate": "Ruby Fence Gate",
+  "block.testmod.ruby_wall": "Ruby Wall",
+
+  "block.testmod.ruby_door": "Ruby Door",
+  "block.testmod.ruby_trapdoor": "Ruby Trapdoor",
+
+  "itemgroup.testmod.testmod_items": "Test Mod Items",
+  "itemgroup.testmod.testmod_blocks": "Test Mod Blocks",
 
   "tooltip.testmod.magic_block.tooltip": "Try throwing a §4Red Kyber Crystal§r on top of me!",
   "tooltip.testmod.chisel.shift_down": "§7Cycles between all the different Kyber Ore colors",

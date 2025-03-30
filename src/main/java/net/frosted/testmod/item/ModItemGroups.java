@@ -11,41 +11,48 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup KYBER_CRYSTAL_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(TestMod.MOD_ID, "kyber_crystals"),
+    public static final ItemGroup TESTMOD_ITEMS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TestMod.MOD_ID, "testmod_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RED_KYBER_CRYSTAL))
-                    .displayName(Text.translatable("itemgroup.testmod.kyber_crystals")).entries((displayContext, entries) -> {
+                    .displayName(Text.translatable("itemgroup.testmod.testmod_items")).entries((displayContext, entries) -> {
                         entries.add(ModItems.RED_KYBER_CRYSTAL);
                         entries.add(ModItems.BLUE_KYBER_CRYSTAL);
                         entries.add(ModItems.GREEN_KYBER_CRYSTAL);
                         entries.add(ModItems.RUBY);
+                        entries.add(ModItems.CHISEL);
 
                     }).build());
 
-    public static final ItemGroup KYBER_ORE_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(TestMod.MOD_ID, "kyber_ores"),
+    public static final ItemGroup TESTMOD_BLOCKS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TestMod.MOD_ID, "testmod_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RED_KYBER_ORE))
-                    .displayName(Text.translatable("itemgroup.testmod.kyber_ores")).entries((displayContext, entries) -> {
+                    .displayName(Text.translatable("itemgroup.testmod.testmod_blocks")).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.RED_KYBER_ORE);
                         entries.add(ModBlocks.BLUE_KYBER_ORE);
                         entries.add(ModBlocks.GREEN_KYBER_ORE);
+
                         entries.add(ModBlocks.DEEPSLATE_RED_KYBER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BLUE_KYBER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_GREEN_KYBER_ORE);
+
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+
                         entries.add(ModBlocks.MAGIC_BLOCK);
                         entries.add(ModBlocks.RUBY_BLOCK);
 
-                    }).build());
+                        entries.add(ModBlocks.RUBY_STAIRS);
+                        entries.add(ModBlocks.RUBY_SLAB);
 
-    public static final ItemGroup LIGHTSABERS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(TestMod.MOD_ID, "lightsabers"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RED_LIGHTSABER))
-                    .displayName(Text.translatable("itemgroup.testmod.lightsabers")).entries((displayContext, entries) -> {
-                        entries.add(ModItems.RED_LIGHTSABER);
-                        entries.add(ModItems.CHISEL);
+                        entries.add(ModBlocks.RUBY_BUTTON);
+                        entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
 
+                        entries.add(ModBlocks.RUBY_FENCE);
+                        entries.add(ModBlocks.RUBY_FENCE_GATE);
+                        entries.add(ModBlocks.RUBY_WALL);
+
+                        entries.add(ModBlocks.RUBY_DOOR);
+                        entries.add(ModBlocks.RUBY_TRAPDOOR);
 
                     }).build());
 

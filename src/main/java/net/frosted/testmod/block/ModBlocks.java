@@ -3,9 +3,7 @@ package net.frosted.testmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.frosted.testmod.TestMod;
 import net.frosted.testmod.block.custom.MagicBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -87,6 +85,36 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .strength(0.1f)
                     .sounds(BlockSoundGroup.METAL)));
+
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2).requiresTool()));
+
+    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2).requiresTool()));
+
+    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
+            new ButtonBlock(BlockSetType.IRON, 2,
+                    AbstractBlock.Settings.create().strength(2).requiresTool().noCollision()));
+
+    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2).requiresTool()));
+
+    public static final Block RUBY_FENCE = registerBlock("ruby_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2).requiresTool()));
+
+    public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2).requiresTool()));
+
+    public static final Block RUBY_WALL = registerBlock("ruby_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2).requiresTool()));
+
+    public static final Block RUBY_DOOR = registerBlock("ruby_door",
+            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2).requiresTool().nonOpaque() ));
+
+    public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2).requiresTool().nonOpaque()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

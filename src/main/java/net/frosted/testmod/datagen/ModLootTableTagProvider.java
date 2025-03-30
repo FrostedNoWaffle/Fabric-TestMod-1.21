@@ -32,11 +32,24 @@ public class ModLootTableTagProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_RED_KYBER_ORE, oreDrops(ModBlocks.DEEPSLATE_RED_KYBER_ORE, ModItems.RED_KYBER_CRYSTAL));
         addDrop(ModBlocks.DEEPSLATE_BLUE_KYBER_ORE, oreDrops(ModBlocks.DEEPSLATE_BLUE_KYBER_ORE, ModItems.BLUE_KYBER_CRYSTAL));
         addDrop(ModBlocks.DEEPSLATE_GREEN_KYBER_ORE, oreDrops(ModBlocks.DEEPSLATE_GREEN_KYBER_ORE, ModItems.GREEN_KYBER_CRYSTAL));
-        addDrop(ModBlocks.FISH_PLUSHIE, drops(ModBlocks.FISH_PLUSHIE));
-        addDrop(ModBlocks.RUBY_BLOCK, drops(ModBlocks.RUBY_BLOCK));
+        addDrop(ModBlocks.FISH_PLUSHIE);
+        addDrop(ModBlocks.RUBY_BLOCK);
 
         addDrop(ModBlocks.RUBY_ORE, multipleOreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY, 1, 1));
         addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE, ModItems.RUBY, 1, 1));
+
+        addDrop(ModBlocks.RUBY_STAIRS);
+        addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+
+        addDrop(ModBlocks.RUBY_BUTTON);
+        addDrop(ModBlocks.RUBY_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
+        addDrop(ModBlocks.RUBY_TRAPDOOR);
+
+        addDrop(ModBlocks.RUBY_WALL);
+        addDrop(ModBlocks.RUBY_FENCE);
+        addDrop(ModBlocks.RUBY_FENCE_GATE);
 
     }
 

@@ -3,6 +3,7 @@ package net.frosted.testmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.frosted.testmod.TestMod;
 import net.frosted.testmod.block.custom.MagicBlock;
+import net.frosted.testmod.block.custom.PinkGarnetLampBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -116,6 +117,11 @@ public class ModBlocks {
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2).requiresTool().nonOpaque()));
 
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
+            new PinkGarnetLampBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(TestMod.MOD_ID, name), block);
@@ -135,8 +141,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.GREEN_KYBER_ORE);
         });
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.FISH_PLUSHIE);
-        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries ->
+                fabricItemGroupEntries.add(ModBlocks.FISH_PLUSHIE));
     }
 }

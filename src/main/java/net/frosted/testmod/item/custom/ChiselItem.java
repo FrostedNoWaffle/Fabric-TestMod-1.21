@@ -1,6 +1,7 @@
 package net.frosted.testmod.item.custom;
 
 import net.frosted.testmod.block.ModBlocks;
+import net.frosted.testmod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.EquipmentSlot;
@@ -44,6 +45,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -56,6 +59,10 @@ public class ChiselItem extends Item {
             tooltip.add(Text.translatable("tooltip.testmod.chisel.shift_down"));
         }else {
             tooltip.add(Text.translatable("tooltip.testmod.chisel"));
+        }
+
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last block changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);

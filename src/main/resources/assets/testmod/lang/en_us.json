@@ -1,4 +1,11 @@
 {
+
+  "item.testmod.ruby_sword": "Ruby Sword",
+  "item.testmod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.testmod.ruby_axe": "Ruby Axe",
+  "item.testmod.ruby_shovel": "Ruby Shovel",
+  "item.testmod.ruby_hoe": "Ruby Hoe",
+
   "item.testmod.red_kyber_crystal": "Red Kyber Crystal",
   "item.testmod.blue_kyber_crystal": "Blue Kyber Crystal",
   "item.testmod.green_kyber_crystal": "Green Kyber Crystal",
@@ -22,6 +29,7 @@
   "block.testmod.ruby_block": "Ruby Block",
 
   "block.testmod.magic_block": "Magic Block",
+  "block.testmod.pink_garnet_lamp": "Pink Garnet Lamp",
 
   "block.testmod.fish_plushie": "ACraftingFish Plushie",
 

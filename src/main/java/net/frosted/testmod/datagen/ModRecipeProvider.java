@@ -55,5 +55,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_SWORD)
+                .pattern("#")
+                .pattern("#")
+                .pattern("!")
+                .input('#', ModItems.RUBY)
+                .input('!', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_PICKAXE)
+                .pattern("###")
+                .pattern(" ! ")
+                .pattern(" ! ")
+                .input('#', ModItems.RUBY)
+                .input('!', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_AXE)
+                .pattern("## ")
+                .pattern("#! ")
+                .pattern(" ! ")
+                .input('#', ModItems.RUBY)
+                .input('!', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_SHOVEL)
+                .pattern("#")
+                .pattern("!")
+                .pattern("!")
+                .input('#', ModItems.RUBY)
+                .input('!', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_HOE)
+                .pattern("## ")
+                .pattern(" ! ")
+                .pattern(" ! ")
+                .input('#', ModItems.RUBY)
+                .input('!', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(recipeExporter);
     }
 }

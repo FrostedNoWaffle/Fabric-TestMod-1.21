@@ -3,6 +3,7 @@ package net.frosted.testmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.frosted.testmod.block.ModBlocks;
+import net.frosted.testmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -42,5 +43,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.RUBY_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.RUBY_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.RUBY_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_RUBY_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 }

@@ -3,9 +3,7 @@ package net.frosted.testmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.frosted.testmod.TestMod;
 import net.frosted.testmod.item.custom.ChiselItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -29,6 +27,22 @@ public class ModItems {
         }
     });
     public static Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
+
+    public static final Item RUBY_SWORD = registerItem("ruby_sword",
+            new SwordItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RUBY, 3, 2.4f))));
+
+    public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe",
+            new PickaxeItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 1, -2.4f))));
+
+    public static final Item RUBY_AXE = registerItem("ruby_axe",
+            new AxeItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 6, -3.2f))));
+
+    public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
+            new ShovelItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.RUBY, 1.5f, -3f))));
+
+    public static final Item RUBY_HOE = registerItem("ruby_hoe",
+            new HoeItem(ModToolMaterials.RUBY, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, 0, -3f))));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TestMod.MOD_ID, name), item);

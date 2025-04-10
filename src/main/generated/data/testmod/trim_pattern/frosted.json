@@ -1,0 +1,8 @@
+{
+  "asset_id": "testmod:frosted",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.testmod.frosted"
+  },
+  "template_item": "testmod:frosted_armor_trim_smithing_template"
+}

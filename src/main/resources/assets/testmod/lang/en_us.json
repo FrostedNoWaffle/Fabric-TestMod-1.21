@@ -1,10 +1,22 @@
 {
 
   "item.testmod.ruby_sword": "Ruby Sword",
+  "item.testmod.kaupen_bow": "Kaupen Bow",
+
   "item.testmod.ruby_pickaxe": "Ruby Pickaxe",
   "item.testmod.ruby_axe": "Ruby Axe",
   "item.testmod.ruby_shovel": "Ruby Shovel",
   "item.testmod.ruby_hoe": "Ruby Hoe",
+  "item.testmod.pink_garnet_hammer": "Pink Garnet Hammer",
+
+  "item.testmod.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.testmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.testmod.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.testmod.pink_garnet_boots": "Pink Garnet Boots",
+
+  "item.testmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+
+
 
   "item.testmod.red_kyber_crystal": "Red Kyber Crystal",
   "item.testmod.blue_kyber_crystal": "Blue Kyber Crystal",
@@ -14,7 +26,15 @@
   "item.testmod.cauliflower": "Cauliflower",
   "item.testmod.starlight_ashes": "Starlight Ashes",
   "Item.testmod.ruby": "Ruby",
+  "item.testmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.testmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
+  "item.testmod.frosted_armor_trim_smithing_template": "Frosted Smithing Template",
+
+  "effect.testmod.slimey": "Slimey",
+  "item.minecraft.potion.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering.potion.slimey_potion": "Slimey Lingering Potion",
 
   "block.testmod.red_kyber_ore": "Red Kyber Ore",
   "block.testmod.blue_kyber_ore": "Blue Kyber Ore",
@@ -52,5 +72,24 @@
   "tooltip.testmod.magic_block.tooltip": "Try throwing a §4Red Kyber Crystal§r on top of me!",
   "tooltip.testmod.chisel.shift_down": "§7Cycles between all the different Kyber Ore colors",
   "tooltip.testmod.chisel": "Press §eShift§r for more information",
-  "tooltip.testmod.cauliflower": "Has a random change of giving a §4Health§r boost"
+  "tooltip.testmod.cauliflower": "Has a random change of giving a §4Health§r boost",
+
+  "trim_material.testmod.ruby": "Ruby Material",
+  "trim_pattern.testmod.frosted": "Frosted Armor Pattern",
+
+  "painting.testmod.world.title": "World",
+  "painting.testmod.world.author": "NanoAttack",
+  "painting.testmod.shrimp.title": "Shrimp",
+  "painting.testmod.shrimp.author": "NanoAttack",
+  "painting.testmod.saw_them.title": "Saw Them",
+  "painting.testmod.saw_them.author": "NanoAttack",
+
+  "enchantment.testmod.lightning_striker": "Lightning Striker",
+
+  "item.testmod.cauliflower_seeds": "Cauliflower Seeds",
+  "block.testmod.cauliflower_crop": "Cauliflower Crop",
+
+  "item.testmod.honey_berry": "Honey Berries",
+  "block.testmod.honey_berry_bush": "Honey Berry Bush"
+
 }

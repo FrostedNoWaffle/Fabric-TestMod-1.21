@@ -2,9 +2,13 @@ package net.frosted.testmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.frosted.testmod.TestMod;
+import net.frosted.testmod.block.custom.CauliflowerCropBlock;
+import net.frosted.testmod.block.custom.HoneyBerryBushBlock;
 import net.frosted.testmod.block.custom.MagicBlock;
 import net.frosted.testmod.block.custom.PinkGarnetLampBlock;
+import net.frosted.testmod.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -75,11 +79,11 @@ public class ModBlocks {
             new MagicBlock(AbstractBlock.Settings.create()
                     .strength(1f)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.WART_BLOCK)));
+                    .sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final Block FISH_PLUSHIE = registerBlock("fish_plushie",
             new Block(AbstractBlock.Settings.create()
-                    .strength(0.1f)
+                    .breakInstantly()
                     .sounds(BlockSoundGroup.WOOL)));
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
@@ -122,8 +126,18 @@ public class ModBlocks {
                     .strength(1f)
                     .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block HONEY_BERRY_BUSH = registerBlockWithoutBlockItem("honey_berry_bush",
+            new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(TestMod.MOD_ID, name), block);
+    }
+    private static Block registerBlockWithoutBlockItem(String name, Block block){
         return Registry.register(Registries.BLOCK, Identifier.of(TestMod.MOD_ID, name), block);
     }
 

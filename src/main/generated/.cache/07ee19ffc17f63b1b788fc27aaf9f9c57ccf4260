@@ -1,7 +1,10 @@
-// 1.21	2025-03-31T02:15:00.3037746	TestMod/Tags for minecraft:item
+// 1.21	2025-04-10T00:47:52.8410381	TestMod/Tags for minecraft:item
 b1a90b3e94d9a2aa3ccefbee683ecc4e1ac6d376 data\testmod\tags\item\transformable_items.json
+afb6942e608ef03df779118622ffe6cbef89d0c5 data\minecraft\tags\item\trim_materials.json
 a95583ed165d48b2e8b54110e7a0432dac84693f data\minecraft\tags\item\axes.json
 016c275f16a7fbf9ac79e1acfcef56c7b72aa119 data\minecraft\tags\item\swords.json
 5e11e0046c82afdb7849fb445032d66e974df505 data\minecraft\tags\item\shovels.json
-bda6d0a7b0e08df01df302b78bb2d348c652fb66 data\minecraft\tags\item\pickaxes.json
+33408655408642b102651c4c3cf9ee8c0d116584 data\minecraft\tags\item\trimmable_armor.json
+5f95567a9cbb92b77ea872039e495bf06d6b7dd4 data\minecraft\tags\item\pickaxes.json
+f25778cb276b20fef17c7856bbd4c5c4e994e382 data\minecraft\tags\item\trim_templates.json
 04e2ec7b2e12245807cc7b3242761819cdc8fc0d data\minecraft\tags\item\hoes.json

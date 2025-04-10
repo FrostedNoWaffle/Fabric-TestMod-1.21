@@ -2,14 +2,19 @@ package net.frosted.testmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.frosted.testmod.TestMod;
 import net.frosted.testmod.block.ModBlocks;
 import net.frosted.testmod.item.ModItems;
+import net.frosted.testmod.potion.ModPotions;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -99,5 +104,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('!', Items.STICK)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(recipeExporter);
+
+        offerSmithingTrimRecipe(recipeExporter, ModItems.FROSTED_SMITHING_TEMPLATE, Identifier.of(TestMod.MOD_ID, "frosted"));
+
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION);
+        });
     }
 }

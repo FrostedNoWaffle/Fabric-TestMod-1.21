@@ -21,6 +21,30 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.CHISEL);
 
+                        entries.add(ModItems.RUBY_SWORD);
+                        entries.add(ModItems.RUBY_PICKAXE);
+                        entries.add(ModItems.RUBY_AXE);
+                        entries.add(ModItems.RUBY_SHOVEL);
+                        entries.add(ModItems.RUBY_HOE);
+                        entries.add(ModItems.PINK_GARNET_HAMMER);
+
+                        entries.add(ModItems.PINK_GARNET_HELMET);
+                        entries.add(ModItems.PINK_GARNET_CHESTPLATE);
+                        entries.add(ModItems.PINK_GARNET_LEGGINGS);
+                        entries.add(ModItems.PINK_GARNET_BOOTS);
+
+                        entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
+
+                        entries.add(ModItems.KAUPEN_BOW);
+
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
+
+                        entries.add(ModItems.HONEY_BERRIES);
+
+                        
+
                     }).build());
 
     public static final ItemGroup TESTMOD_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -56,11 +80,10 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
 
-                        entries.add(ModItems.RUBY_SWORD);
-                        entries.add(ModItems.RUBY_PICKAXE);
-                        entries.add(ModItems.RUBY_AXE);
-                        entries.add(ModItems.RUBY_SHOVEL);
-                        entries.add(ModItems.RUBY_HOE);
+
+
+
+
 
                     }).build());
 

@@ -25,7 +25,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.RUBY_SWORD);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.RUBY_PICKAXE);
+                .add(ModItems.RUBY_PICKAXE)
+                .add(ModItems.PINK_GARNET_HAMMER);
 
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.RUBY_AXE);
@@ -35,5 +36,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.RUBY_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.PINK_GARNET_HELMET)
+                .add(ModItems.PINK_GARNET_CHESTPLATE)
+                .add(ModItems.PINK_GARNET_LEGGINGS)
+                .add(ModItems.PINK_GARNET_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.RUBY);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.FROSTED_SMITHING_TEMPLATE);
     }
 }
